@@ -1,5 +1,5 @@
 {
-	"name": "hunter-photo",
+	"name": "hunter-photo-client",
 	"version": "1.0.0",
 	"scripts": {
 		"dev": "svelte-kit dev --open",
@@ -18,5 +18,8 @@
 		"prettier-plugin-svelte": "^2.2.0",
 		"svelte": "^3.34.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"axios": "^0.21.1"
+	}
 }
