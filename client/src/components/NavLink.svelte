@@ -3,7 +3,7 @@
 
 	function calcHref(text) {
 		if (text === 'Home' || text === 'home') return '/';
-		return `/${text.toLowerCase}`;
+		return `/${text.toLowerCase()}`;
 	}
 
 	$: href = calcHref(link);
