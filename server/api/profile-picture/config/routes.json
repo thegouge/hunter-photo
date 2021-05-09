@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/profile-picture",
+      "handler": "profile-picture.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/profile-picture",
+      "handler": "profile-picture.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/profile-picture",
+      "handler": "profile-picture.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
