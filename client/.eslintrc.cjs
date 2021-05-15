@@ -1,7 +1,7 @@
 module.exports = {
 	root: true,
-	extends: ['eslint:recommended', 'prettier'],
-	plugins: ['svelte3'],
+	extends: ['eslint:recommended', 'prettier', "plugin:cypress/recommended"],
+	plugins: ['svelte3', 'cypress'],
 	overrides: [{ files: ['*.svelte'], processor: 'svelte3/svelte3' }],
 	parserOptions: {
 		sourceType: 'module',
@@ -10,6 +10,7 @@ module.exports = {
 	env: {
 		browser: true,
 		es2017: true,
-		node: true
+		node: true,
+    "cypress/globals": true
 	}
 };
