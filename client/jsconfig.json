@@ -2,7 +2,9 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"paths": {
-			"$lib/*": ["client/src/lib/*"]
+			"$lib/*": ["client/src/lib/*"],
+			"@/*": ["client/src/*"],
+			"~/*": ["client/node_modules/*"]
 		}
 	},
 	"include": ["client/src/**/*.d.ts", "client/src/**/*.js", "client/src/**/*.svelte"]
