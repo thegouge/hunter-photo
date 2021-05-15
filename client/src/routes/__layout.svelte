@@ -10,15 +10,15 @@
 
 	axios.get(`${API_URL}/profile-picture`).then((response) => {
 		console.log(response);
-		src = `${API_URL}${response.data.image[0].url}`;
-		alt = response.data.image[0].alternativeText;
+		src = `${API_URL}${response.data.Picture[0].url}`;
+		alt = response.data.altText.alternativeText;
 	});
 </script>
 
 <div class="flex">
 	<nav class="w-1/6 h-screen bg-gray-700 text-white p-5">
 		<div class="logo">
-			<img {src} {alt} class="rounded-full border-gray-400 border-2 w-20 mx-auto" />
+			<img {src} {alt} title={alt} class="rounded-full border-gray-400 border-2 w-20 mx-auto" />
 			<h1 class="text-center text-xl font-semibold mt-2">Hunter Smith</h1>
 		</div>
 		<ul class="">
@@ -32,4 +32,5 @@
 		<slot />
 	</main>
 </div>
+
 <Tailwind />

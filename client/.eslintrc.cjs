@@ -12,5 +12,5 @@ module.exports = {
 		es2017: true,
 		node: true,
     "cypress/globals": true
-	}
+	},
 };
