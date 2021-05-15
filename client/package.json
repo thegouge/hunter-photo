@@ -14,7 +14,8 @@
 		"axios": "^0.21.1",
 		"masonry-layout": "^4.2.2",
 		"node-sass": "^6.0.0",
-		"sass": "^1.32.13"
+		"sass": "^1.32.13",
+		"svelte-masonry": "0.0.17"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^1.0.0-next.9",
