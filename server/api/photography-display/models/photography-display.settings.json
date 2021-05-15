@@ -1,8 +1,8 @@
 {
-  "kind": "singleType",
-  "collectionName": "profile_pictures",
+  "kind": "collectionType",
+  "collectionName": "photography_displays",
   "info": {
-    "name": "Profile Picture",
+    "name": "Photography Display",
     "description": ""
   },
   "options": {
@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Picture": {
+    "Media": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -24,11 +24,11 @@
       "required": false,
       "pluginOptions": {}
     },
-    "altText": {
+    "AltText": {
       "type": "string"
     },
-    "profileTitle": {
-      "type": "string"
+    "Description": {
+      "type": "richtext"
     }
   }
 }

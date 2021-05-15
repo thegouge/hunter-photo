@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/photography-displays",
+      "handler": "photography-display.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/photography-displays/count",
+      "handler": "photography-display.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/photography-displays/:id",
+      "handler": "photography-display.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/photography-displays",
+      "handler": "photography-display.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/photography-displays/:id",
+      "handler": "photography-display.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/photography-displays/:id",
+      "handler": "photography-display.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
-  "kind": "singleType",
-  "collectionName": "profile_pictures",
+  "kind": "collectionType",
+  "collectionName": "design_displays",
   "info": {
-    "name": "Profile Picture",
+    "name": "Design Display",
     "description": ""
   },
   "options": {
@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Picture": {
+    "Media": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -27,8 +27,8 @@
     "altText": {
       "type": "string"
     },
-    "profileTitle": {
-      "type": "string"
+    "description": {
+      "type": "richtext"
     }
   }
 }

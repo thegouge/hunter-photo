@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_texts",
+  "info": {
+    "name": "About Text"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "About": {
+      "type": "richtext"
+    }
+  }
+}

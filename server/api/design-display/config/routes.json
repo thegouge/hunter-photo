@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/design-displays",
+      "handler": "design-display.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/design-displays/count",
+      "handler": "design-display.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/design-displays/:id",
+      "handler": "design-display.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/design-displays",
+      "handler": "design-display.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/design-displays/:id",
+      "handler": "design-display.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/design-displays/:id",
+      "handler": "design-display.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
