@@ -1,7 +1,7 @@
 <script>
 	import axios from 'axios';
-	import '../app.css';
 	import NavLink from '../components/NavLink.svelte';
+	import Tailwind from '../components/Tailwind.svelte';
 	import { API_URL } from '../lib/constants';
 
 	let links = ['Home', 'About', 'Photos', 'Design', 'Twitch'];
@@ -15,18 +15,21 @@
 	});
 </script>
 
-<nav class="w-1/6 h-screen fixed bg-sidebar text-white p-5">
-	<div class="logo">
-		<img {src} {alt} class="rounded-full border-gray-400 border-2 w-20 mx-auto" />
-		<h1 class="text-center text-xl font-semibold mt-2">Hunter Smith</h1>
-	</div>
-	<ul class="">
-		{#each links as link}
-			<NavLink {link} />
-		{/each}
-	</ul>
-</nav>
+<div class="flex">
+	<nav class="w-1/6 h-screen bg-gray-700 text-white p-5">
+		<div class="logo">
+			<img {src} {alt} class="rounded-full border-gray-400 border-2 w-20 mx-auto" />
+			<h1 class="text-center text-xl font-semibold mt-2">Hunter Smith</h1>
+		</div>
+		<ul class="">
+			{#each links as link}
+				<NavLink {link} />
+			{/each}
+		</ul>
+	</nav>
 
-<main class="h-screen bg-gray-700">
-	<slot />
-</main>
+	<main>
+		<slot />
+	</main>
+</div>
+<Tailwind />
