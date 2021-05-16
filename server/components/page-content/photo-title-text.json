@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_page_content_photo_title_texts",
+  "info": {
+    "name": "PhotoTitleText",
+    "icon": "photo-video"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    }
+  }
+}

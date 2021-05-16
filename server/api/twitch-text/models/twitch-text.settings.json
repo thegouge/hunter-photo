@@ -1,8 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "about_texts",
+  "collectionName": "twitch_texts",
   "info": {
-    "name": "About Text",
+    "name": "Twitch Text",
     "description": ""
   },
   "options": {
@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "AboutText": {
+    "TwitchText": {
       "type": "component",
       "repeatable": true,
       "component": "page-content.text-content"

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/twitch-text",
+      "handler": "twitch-text.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/twitch-text",
+      "handler": "twitch-text.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/twitch-text",
+      "handler": "twitch-text.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
