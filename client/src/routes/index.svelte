@@ -1,11 +1,25 @@
 <script>
+	import { getText } from '$lib/helpers';
+	import SvelteMarkdown from 'svelte-markdown';
+
+	const text = getText('home-text');
+	console.log({ text });
 </script>
 
 <svelte:head>
-	<title>Home Page</title>
+	<title>Hunter Smith | Home Page</title>
 </svelte:head>
 
-<main class="w-full">content!</main>
+{#await text}
+	loading...
+{:then { Title, Content }}
+	<div class="w-full">
+		<h2>{Title}</h2>
+		<SvelteMarkdown source={Content} />
+	</div>
+{:catch}
+	<div class="text-red-800">something went wrong</div>
+{/await}
 
 <style style lang="postcss">
 	main {
