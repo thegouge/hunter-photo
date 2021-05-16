@@ -1,19 +1,47 @@
 {
-  "name": "hunter-photo-site",
-  "version": "1.1.0",
-  "description": "overwatch stat tracker based on the traversy media tutorial",
-  "main": "server.js",
+  "name": "hunter-photo-server",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
   "scripts": {
-    "server": "npm run develop --prefix server",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "server": "npm run develop",
     "client": "npm run dev --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "predeploy": "npm run build --prefix client && npm run build --prefix server",
+    "predeploy": "npm run build --prefix client && npm run build",
     "cy": "concurrently \"npm run dev\" \"cd client && npx cypress open\""
   },
-  "author": "thegouge <thegouge42@gmail.com> (https://thegouge.github.io)",
-  "license": "ISC",
+  "devDependencies": {},
   "dependencies": {
     "concurrently": "^5.3.0",
-    "dotenv": "^8.2.0"
-  }
+    "dotenv": "^8.2.0",
+    "knex": "0.21.18",
+    "pg": "^8.6.0",
+    "pg-connection-string": "^2.5.0",
+    "sqlite3": "5.0.0",
+    "strapi": "3.6.2",
+    "strapi-admin": "3.6.2",
+    "strapi-connector-bookshelf": "3.6.2",
+    "strapi-plugin-content-manager": "3.6.2",
+    "strapi-plugin-content-type-builder": "3.6.2",
+    "strapi-plugin-email": "3.6.2",
+    "strapi-plugin-i18n": "3.6.2",
+    "strapi-plugin-upload": "3.6.2",
+    "strapi-plugin-users-permissions": "3.6.2",
+    "strapi-utils": "3.6.2"
+  },
+  "author": {
+    "name": "Alex Gouge-Schajer"
+  },
+  "strapi": {
+    "uuid": "de864346-2305-4861-a82c-e64244633769"
+  },
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": "^6.0.0"
+  },
+  "license": "MIT"
 }
