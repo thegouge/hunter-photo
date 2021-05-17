@@ -1,6 +1,5 @@
 <script>
 	export let images;
-	console.log({ images });
 	import Masonry from 'svelte-masonry/Masonry.svelte';
 </script>
 

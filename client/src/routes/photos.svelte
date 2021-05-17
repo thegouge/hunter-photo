@@ -9,4 +9,6 @@
 	<div class="loading">loading...</div>
 {:then images}
 	<MasonDisplay {images} />
+{:catch}
+	<div>Something went wrong</div>
 {/await}

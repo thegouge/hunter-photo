@@ -3,7 +3,6 @@
 	import SvelteMarkdown from 'svelte-markdown';
 
 	const text = getText('home-text');
-	console.log({ text });
 </script>
 
 <svelte:head>

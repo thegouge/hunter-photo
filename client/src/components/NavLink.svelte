@@ -1,11 +1,11 @@
 <script>
 	export let link;
-
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 
 	function calcHref(text) {
 		if (text === 'Home' || text === 'home') return '/';
-		return `/${text.toLowerCase()}`;
+		return `${base}/${text.toLowerCase()}`;
 	}
 
 	$: href = calcHref(link);
