@@ -2,7 +2,7 @@
 
 This is the repository for making Hunter Smith's personal website!
 
-The (website in all of its glory)[''] (will be posted here once I get it up and running
+The (website in all of its glory)[https://thegouge.github.io/hunter-photo] (will be posted here once I get it up and running
 
 ## Logging in as an Admin
 
