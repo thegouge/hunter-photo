@@ -22,10 +22,6 @@ const config = {
     prerender: {
       pages: ['*']
     },
-    paths: {
-      base: '/hunter-photo',
-      assets: '/hunter-photo'
-    }
 	},
 };
 

@@ -3,8 +3,9 @@
 	"version": "1.0.0",
 	"scripts": {
 		"dev": "svelte-kit dev --open",
-		"build": "rm -rf /build && svelte-kit build && touch build/.nojekyll",
-		"deploy": "npm run build && npx gh-pages -d build -t true",
+		"build": "svelte-kit build && touch build/.nojekyll",
+		"predeploy": "rm -rf /build && npm run build",
+		"deploy": "npx gh-pages -d build -t true",
 		"preview": "svelte-kit preview",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
 		"format": "prettier --write --plugin-search-dir=. .",
@@ -20,8 +21,8 @@
 		"svelte-masonry": "0.0.17"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-static": "^1.0.0-next.9",
-		"@sveltejs/kit": "next",
+		"@sveltejs/adapter-static": "^1.0.0-next.10",
+		"@sveltejs/kit": "^1.0.0-next.108",
 		"autoprefixer": "^10.2.5",
 		"cypress": "^7.3.0",
 		"eslint": "^7.22.0",
@@ -35,6 +36,6 @@
 		"svelte": "^3.34.0",
 		"svelte-preprocess": "^4.7.1",
 		"tailwindcss": "^2.1.1",
-		"vite": "^2.3.2"
+		"vite": "^2.3.3"
 	}
 }
