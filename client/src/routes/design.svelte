@@ -1,13 +1,19 @@
 <script>
 	import { getImages } from '$lib/helpers';
+	import Loading from '../components/loading.svelte';
 	import MasonDisplay from '../components/MasonDisplay.svelte';
 
 	let images = getImages('design-displays');
 </script>
 
+<svelte:head>
+	<title>Hunter Smith | Graphic Design Work</title>
+</svelte:head>
+
 {#await images}
-	<div class="loading">loading...</div>
+	<Loading />
 {:then images}
+	<h2 class="page-title">My Designs!</h2>
 	<MasonDisplay {images} />
 {:catch}
 	<div>Something went wrong</div>

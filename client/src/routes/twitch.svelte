@@ -1,20 +1,21 @@
 <script>
 	import { getText } from '$lib/helpers';
-	import SvelteMarkdown from 'svelte-markdown';
+	import Loading from '../components/loading.svelte';
+	import Markdown from '../components/markdown.svelte';
 
 	const text = getText('twitch-text');
 </script>
 
 <svelte:head>
-	<title>About My Twitch</title>
+	<title>Hunter Smith | About My Twitch</title>
 </svelte:head>
 
 {#await text}
-	loading...
+	<Loading />
 {:then { Title, Content }}
 	<div class="w-full">
-		<h2>{Title}</h2>
-		<SvelteMarkdown source={Content} />
+		<h2 class="page-title">{Title}</h2>
+		<Markdown source={Content} />
 	</div>
 {:catch}
 	<div class="text-red-800">something went wrong</div>
