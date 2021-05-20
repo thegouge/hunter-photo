@@ -4,7 +4,7 @@
 	import { base } from '$app/paths';
 
 	function calcHref(text) {
-		if (text === 'Home' || text === 'home') return '/';
+		if (text === 'Home' || text === 'home') return `${base}`;
 		return `${base}/${text.toLowerCase()}`;
 	}
 
