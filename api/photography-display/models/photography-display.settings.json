@@ -24,7 +24,7 @@
       "required": false,
       "pluginOptions": {}
     },
-    "AltText": {
+    "Title": {
       "type": "string"
     },
     "Description": {
