@@ -20,7 +20,7 @@ const config = {
 		adapter: adapter({fallback: 'index.html'}),
     target: "#svelte",
     paths: {
-      base: ''
+      base: '/hunter-photo'
     }
 	},
 };
