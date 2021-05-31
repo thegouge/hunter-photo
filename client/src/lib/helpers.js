@@ -4,14 +4,17 @@ import axios from 'axios';
 export async function getImages(collection) {
   try {
     const response = await axios.get(`${API_URL}/${collection}`);
-    return response.data.map((photo) => {
-      return {
-        src: `${API_URL}${photo.Media[0].url}`,
-        alt: photo.AltText,
-        desc: photo.Description,
-        id: photo.id
-      };
-    });
+    return response.data.reduce((photoArray, photoGroup) => {
+      console.log({photoGroup})
+      const photos = photoGroup.Media.map((photo) => {
+        return {
+          src: `${API_URL}${photo.url}`,
+          alt: photo.alternativeText,
+          id: photo.id
+        };
+      })
+      return [...photoArray, ...photos]
+    },[]);
   } catch (err) {
     console.error(err);
     return [];
